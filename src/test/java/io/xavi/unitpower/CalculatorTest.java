@@ -20,4 +20,12 @@ public class CalculatorTest {
         int expected = 1;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    public void add_TwoPlusThree_Five(){
+        Calculator sut = new Calculator();
+        int actual = sut.add("2,3");
+        int expected = 5;
+        Assert.assertEquals(actual,expected);
+    }
 }
