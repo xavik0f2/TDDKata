@@ -6,6 +6,11 @@ public class Calculator {
         if (input == "") return 0;
         if (!input.contains(",")) return Integer.parseInt(input);
         String[] inputSplitted = input.split(",");
-        return Integer.parseInt(inputSplitted[0]) + Integer.parseInt(inputSplitted[1]);
+
+        int sum=0;
+        for (String sumando:inputSplitted)
+            sum += Integer.parseInt(sumando);
+
+        return sum;
     }
 }
