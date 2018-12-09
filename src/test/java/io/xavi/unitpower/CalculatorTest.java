@@ -33,4 +33,12 @@ public class CalculatorTest {
         int expected = 5;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    public void add_MultipleNumbers_Sum(){
+        int actual = sut.add("12,15,105,100");
+        int expected = 232;
+        Assert.assertEquals(actual,expected);
+
+    }
 }
