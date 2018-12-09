@@ -12,4 +12,12 @@ public class CalculatorTest {
         int expected = 0;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    public void add_oneInputNumber_InputNumber(){
+        Calculator sut = new Calculator();
+        int actual = sut.add("1");
+        int expected = 1;
+        Assert.assertEquals(actual,expected);
+    }
 }
