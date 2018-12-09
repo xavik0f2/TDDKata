@@ -41,4 +41,12 @@ public class CalculatorTest {
         Assert.assertEquals(actual,expected);
 
     }
+
+    @Test
+    public void add_MultipleNumbersAndMultipleDelimiters_Sum(){
+        int actual = sut.add("1\n2,3");
+        int expected = 6;
+        Assert.assertEquals(actual,expected);
+
+    }
 }
